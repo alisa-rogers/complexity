@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex(e)ty Check</title>
+    <script>
+        function complexity () {
+                 let strings = [];
+                 strings.push (prompt("Type here:"));
+                 for (let m = 0; m < strings.length; m++) {
+                     let current = strings[m];
+                     if (current.indexOf("complexety") === -1) {
+                         alert ("Correct!")
+                     }
+                     else {
+                         const check = strings[m].split (" ");
+                         if (check.includes("complexety")) {
+                             alert ("Error! Correct: complexity.");
+                         }
+                         else {
+                           alert ("Correct!")
+                         };  
+                     };
+                 };
+             };
+             console.log (complexity());
+            </script>
+</head>
+<body>
+</body>
+</html>
