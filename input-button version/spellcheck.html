@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex(e)ty Check</title>
+    <script>
+        function spellcheck () {
+                 let strings = [];
+                 let message;
+                 strings.push (document.getElementById("userinput").value);
+                 for (let m = 0; m < strings.length; m++) {
+                     let current = strings[m];
+                     if (current.indexOf("complexety") === -1) {
+                         message = "Correct!";
+                     }
+                     else {
+                         const check = strings[m].split (" ");
+                         if (check.includes("complexety")) {
+                             message = "Error! Correct: complexity.");
+                         }
+                         else {
+                            message = "Correct!";
+                         };  
+                     };
+                 };
+             };
+             document.body.innerHTML = message;
+    </script>
+</head>
+
+
+<body>
+    <form>
+        <input type="text" size="120" id="userinput">
+        <br>
+        <button onclick="spellcheck()">Check!</button>
+    </form>
+</body>
+</html>
