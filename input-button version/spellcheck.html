@@ -6,7 +6,7 @@
     <title>Complex(e)ty Check</title>
     <script>
         function spellcheck () {
-                 let strings = [];
+                 let strings = []; //obviously I have to use "string" here;
                  let message;
                  strings.push (document.getElementById("userinput").value);
                  for (let m = 0; m < strings.length; m++) {
@@ -25,7 +25,7 @@
                      };
                  };
              };
-             document.body.innerHTML = message;
+             document.body.innerHTML = message; //some troubles might have occured here
     </script>
 </head>
 
@@ -34,7 +34,7 @@
     <form>
         <input type="text" size="120" id="userinput">
         <br>
-        <button onclick="spellcheck()">Check!</button>
+        <button onclick="spellcheck()">Check!</button> //if I make "onclick" call some simple function, i. e. alert "Hello", it works.
     </form>
 </body>
 </html>
