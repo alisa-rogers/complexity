@@ -1,0 +1,9 @@
+| Input                                                                                             | Expected result                                     | Actual result                                       |
+|---------------------------------------------------------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|
+| complexity algorithm natural language processing                                                  | Correct!                                            | Correct!                                            |
+| Complexity apple algorithm natural language processing.                                           | Error! Unrecognised words: apple.                   | Error! Unrecognised words: apple.                   |
+| Complexity algorithm banana apple peach.                                                          | Error! Unrecognised words: banana,apple,peach.      | Error! Unrecognised words: banana,apple,peach.      |
+| Apple banana peach kiwi.                                                                          | Error! Unrecognised words: apple,banana,peach,kiwi. | Error! Unrecognised words: apple,banana,peach,kiwi. |
+| language                                                                                          | Correct!                                            | Correct!                                            |
+| apple                                                                                             | Error! Unrecognised words: apple.                   | Error! Unrecognised words: apple.                   |
+| Complexity algorithm natural language processing complexity algorithm natural language processing | Correct!                                            | Correct!                                            |
