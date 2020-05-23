@@ -17,6 +17,9 @@ Tests:
 | complexity natural language processing complexity | Correct!                    | Correct!                    |
 | complexety natural language processing complexety | Error! Correct: complexity. | Error! Correct: complexity. |
 | complexety natural language processing complexity | Error! Correct: complexity. | Error! Correct: complexity. |
+| COMPLEXETY                                        | Correct!                    | Correct!                    |  
+| complEXETY                                        | Correct!                    | Correct!                    |  
+| cOmPlExEty                                        | Correct!                    | Correct!                    |  
 
 Screens:
 ![complScreen1](screenshots/complScreen1.png)
