@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Small Dictionary No Button</title>
+</head>
+<body>
+<textarea id="input"></textarea>
+<div id="result"></div>
+
+<script>
+let Input = document.getElementById("input");
+let Result = document.getElementById("result");
+
+Input.addEventListener("keyup", equal);
+    function equal(){
+        let dictionary = ["complexity", "algorithm", "natural", "language", "processing"];
+        let text = (Input.value.toLowerCase());
+        text = text.replace(/[.,\'/#!$%\^"&\*;@:{}=\-_`?~()]/g,"");
+        let array = text.split (" ");
+        let newWords = [];
+        for (let m = 0; m < array.length; m++) {
+        let current = array[m];
+        if (dictionary.includes(current) === false && newWords.includes(current) === false)  {
+            newWords.push (current);
+        };
+            for (let n = 0; n < newWords.length; n++) {
+                if (array.includes(newWords[n]) === false) {
+                    newWords.splice (n,1);
+                };
+            };
+            Result.innerHTML = ("The new words: " + newWords +".");
+        };
+    };
+</script>
+</body>
+</html>
