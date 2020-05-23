@@ -21,7 +21,7 @@ Tests:
 | complEXETY                                        | Correct!                    | Correct!                    |  
 | cOmPlExEty                                        | Correct!                    | Correct!                    |  
 
-Screens:
+Screenshots:
 ![complScreen1](screenshots/complScreen1.png)
 ![complScreen2](screenshots/complScreen2.png)
 ![complScreen3](screenshots/complScreen3.png)
