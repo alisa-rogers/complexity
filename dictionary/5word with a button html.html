@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Small Dictionary Button</title>
+</head>
+<body>
+<textarea id="input"></textarea>
+<button id="button">Click</button>
+<div id="result"></div>
+
+<script>
+let Input = document.getElementById("input");
+let Result = document.getElementById("result");
+let Button = document.getElementById("button");
+
+Button.addEventListener("click", equal);
+    function equal(){
+        let dictionary = ["complexity", "algorithm", "natural", "language", "processing"];
+        let text = (Input.value.toLowerCase());
+        text = text.replace(/[.,\'/#!$%\^"&\*;@:{}=\-_`?~()]/g,"");
+        let array = text.split (" ");
+        let newWords = [];
+        
+        for (let m = 0; m < array.length; m++) {
+        let current = array[m];
+        if (dictionary.includes(current) === false && newWords.includes(current) === false)  {
+            newWords.push (current);
+            Result.innerHTML = ("The new words: " + newWords +".");
+        };
+        
+    };
+    }
+</script>
+</body>
+</html>
