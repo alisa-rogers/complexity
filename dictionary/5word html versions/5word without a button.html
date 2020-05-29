@@ -17,7 +17,7 @@ Input.addEventListener("keyup", equal);
     function equal(){
         let dictionary = ["complexity", "algorithm", "natural", "language", "processing"];
         let text = (Input.value.toLowerCase());
-        text = text.replace(/[.,\'/#!$%\^"&\*;@:{}=\-_`?~()]/g,"");
+        text = text.replace(/[1234567890.,\'/#!$%\^"&\*;@:{}=\-_`?~()]/g,"");
         let array = text.split (" ");
         let newWords = [];
         for (let m = 0; m < array.length; m++) {
